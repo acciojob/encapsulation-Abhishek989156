@@ -1,10 +1,12 @@
 package com.driver;
 
+import java.sql.SQLOutput;
+
 public class Main {
   public static void main(String[] args)
   {
-      RWOnly obj=new RWOnly("Rahul");
-      String ans=obj.getName();
-      System.out.println(ans);
+      RWOnly obj=new RWOnly();
+      obj.setName("Rahul");
+      System.out.println(obj.getName());
   }
 }
